@@ -267,7 +267,7 @@ function ProductList({ onHomeClick }) {
         }));
 
         calculateTotalQuantity();
-        alert(plant.name+" has been added to cart.");
+        alert(plant.name+" has been added to cart.")
       };
 
       const calculateTotalQuantity = () => {
@@ -314,7 +314,7 @@ function ProductList({ onHomeClick }) {
                                 <div className="product-description">{plant.description}</div> {/* Display plant description */}
                                 <div className="product-cost">${plant.cost}</div> {/* Display plant cost */}
                                 <button
-                                    className="product-button"
+                                    className={cartItems.find(item => item.name === plant.name)? "product-button btn-disabled" : "product-button"}
                                     onClick={() => handleAddToCart(plant)} // Handle adding plant to cart
                                 >
                                     Add to Cart
