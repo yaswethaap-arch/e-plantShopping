@@ -267,6 +267,7 @@ function ProductList({ onHomeClick }) {
         }));
 
         calculateTotalQuantity();
+        alert(plant.name+" has been added to cart.");
       };
 
       const calculateTotalQuantity = () => {
