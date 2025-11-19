@@ -250,3 +250,7 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+.btn-disabled {
+            opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
+            cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
+      }
