@@ -254,3 +254,13 @@ body {
             opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
             cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
       }
+.badge:after{
+content:attr(value);
+font-size:12px;
+border-radius:50%;
+padding:3px;
+position:relative;
+left:-8px;
+top:-10px;
+opacity:0.9;
+}
